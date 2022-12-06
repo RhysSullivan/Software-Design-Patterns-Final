@@ -1,3 +1,5 @@
+// Written and inspired by Drew Marcotte, Rhys Sullivan, and Ben Roberts
+
 package ShoppingCart;
 
 import java.util.List;
