@@ -1,8 +1,7 @@
 package ShoppingCart.Payments;
 
-// PayPal is another concrete implementation of PaymentMethod
-// but it requires a different set of parameters to initialize
-public class PayPal implements PaymentMethod {
+// PayPal represents a class that cannot be changed
+public class PayPal {
     private String email;
     private String password;
 
@@ -11,7 +10,8 @@ public class PayPal implements PaymentMethod {
         this.password = password;
     }
 
-    public void pay(double amount) {
-        // implement PayPal payment
+    public boolean unchangeablePay(double amount) {
+        System.out.println("Calling PayPal API");
+        return true;
     }
 }
