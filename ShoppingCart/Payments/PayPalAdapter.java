@@ -1,3 +1,5 @@
+// Written by Ben Roberts
+
 package ShoppingCart.Payments;
 
 // The Adapter pattern allows us to use the PayPal class as a PaymentMethod

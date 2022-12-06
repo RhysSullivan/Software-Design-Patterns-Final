@@ -1,3 +1,5 @@
+// Written by Ben Roberts
+
 package ShoppingCart.Payments;
 
 // PaymentMethod is an interface that defines a pay method

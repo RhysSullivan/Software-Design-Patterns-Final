@@ -1,3 +1,5 @@
+// Written by Ben Roberts
+
 package ShoppingCart.Payments;
 
 // PayPal represents a class that cannot be changed
