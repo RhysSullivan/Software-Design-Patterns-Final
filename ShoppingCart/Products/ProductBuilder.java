@@ -5,8 +5,8 @@ public class ProductBuilder {
   private final Product product;
 
   // Construct a new ProductBuilder instance
-  public ProductBuilder(int id, String name, double price, int quantity) {
-    this.product = new Product(id, name, price, quantity);
+  public ProductBuilder(int id, String name, double price) {
+    this.product = new Product(id, name, price);
   }
 
   // Set the name of the product
@@ -18,12 +18,6 @@ public class ProductBuilder {
   // Set the price of the product
   public ProductBuilder setPrice(double price) {
     product.setPrice(price);
-    return this;
-  }
-
-  // Set the quantity of the product
-  public ProductBuilder setQuantity(int quantity) {
-    product.setQuantity(quantity);
     return this;
   }
 

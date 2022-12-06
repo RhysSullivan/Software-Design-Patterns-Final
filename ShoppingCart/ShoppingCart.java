@@ -40,6 +40,7 @@ public class ShoppingCart {
         var amountToPay = products.stream().mapToDouble(p -> p.getPrice()).sum();
         if (paymentMethod.pay(amountToPay)) {
             dispatchAction(Action.CHECKOUT);
+            clear();
         }
     }
 
