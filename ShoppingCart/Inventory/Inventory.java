@@ -6,7 +6,7 @@ import java.util.List;
 import ShoppingCart.Products.Product;
 import ShoppingCart.Products.ProductBuilder;
 
-public static class Inventory {
+public class Inventory {
     private static Inventory inventory = new Inventory();
     private Inventory() {
         inventoryItems.add(new ProductBuilder(1, "Shoe", 1.00, 10).setColor("red").build());
@@ -14,7 +14,7 @@ public static class Inventory {
         inventoryItems.add(new ProductBuilder(3, "Keyboard", 2.00, 10).build());
     }
 
-    public Inventory getInventory() {
+    public static Inventory getInventory() {
         return inventory;
     }
 
