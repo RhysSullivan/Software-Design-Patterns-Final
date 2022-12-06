@@ -5,17 +5,22 @@ import java.util.Scanner;
 
 import ShoppingCart.Action;
 import ShoppingCart.ActionObserver;
+import ShoppingCart.ShoppingCart;
 import ShoppingCart.Inventory.Inventory;
 import ShoppingCart.Products.Product;
 
 public class IO implements ActionObserver {
-    // Singleton
-    private static IO console = new IO();
-    private IO() { }
-    public static IO console() {
-        return console;
+    ShoppingCart cart;
+    public IO(ShoppingCart cart) {
+        this.cart = cart;
+        this.cart.registerObserver(this); // Enroll IO into cart observer
     }
 
+    private void IOStart() {
+        while(true) {
+
+        }
+    }
     // Observer (at play)
     @Override
     public void onAction(Action action, List<Product> cartProducts) {
@@ -37,6 +42,8 @@ public class IO implements ActionObserver {
         InputOption cartOptions = new InputOption(cartProducts);
         UpdateScreen("Current products in cart: ", false);
         UpdateScreen(cartOptions, false);
+
+        InterpretInput(GetInput());
     }
 
     private void ClearScreen() {
@@ -60,5 +67,9 @@ public class IO implements ActionObserver {
 
     private String GetInput() {
         return(new Scanner(System.in).nextLine());
+    }
+
+    private void InterpretInput(String input) {
+
     }
 }
