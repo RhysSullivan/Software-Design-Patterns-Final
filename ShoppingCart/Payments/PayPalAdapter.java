@@ -9,7 +9,7 @@ public class PayPalAdapter implements PaymentMethod {
         this.payPal = new PayPal(email, password);
     }
 
-    public void pay(double amount) {
-        payPal.pay(amount);
+    public boolean pay(double amount) {
+        return payPal.unchangeablePay(amount);
     }
 }

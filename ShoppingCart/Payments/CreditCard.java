@@ -14,7 +14,8 @@ public class CreditCard implements PaymentMethod {
         this.dateOfExpiry = dateOfExpiry;
     }
 
-    public void pay(double amount) {
-        // implement credit card payment
+    public boolean pay(double amount) {
+        System.out.println("Calling Credit Card API");
+        return true;
     }
 }
