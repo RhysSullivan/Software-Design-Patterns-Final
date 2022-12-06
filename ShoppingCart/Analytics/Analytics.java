@@ -1,3 +1,7 @@
+/*
+ * Written by Drew Marcotte
+ */
+
 package ShoppingCart.Analytics;
 
 import java.util.List;
