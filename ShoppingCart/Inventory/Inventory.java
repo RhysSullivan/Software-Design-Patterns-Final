@@ -1,3 +1,4 @@
+// Written by Rhys Sullivan
 package ShoppingCart.Inventory;
 
 import java.util.HashMap;

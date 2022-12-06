@@ -1,3 +1,4 @@
+// Written by Rhys Sullivan
 package ShoppingCart.Products;
 
 public class Product {
