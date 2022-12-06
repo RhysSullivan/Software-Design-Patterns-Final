@@ -1,4 +1,4 @@
-package ShoppingCart;
+package ShoppingCart.Products;
 
 public class ProductBuilder {
     // The product that is being built

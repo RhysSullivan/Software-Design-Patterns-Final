@@ -1,5 +1,5 @@
-import ShoppingCart.Product;
-import ShoppingCart.ProductBuilder;
+import ShoppingCart.Products.Product;
+import ShoppingCart.Products.ProductBuilder;
 
 // make the main method
 class Main {
