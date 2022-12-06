@@ -8,12 +8,12 @@ public class IO {
         System.out.flush();  
     }
 
-    public void UpdateScreenOptions(InputOption output) {
+    public void UpdateScreen(InputOption output) {
         ClearScreen();
         System.out.println(output.getOptions());
     }
 
-    public void UpdateScreenText(String output) {
+    public void UpdateScreen(String output) {
         ClearScreen();
         System.out.println(output);
     }
